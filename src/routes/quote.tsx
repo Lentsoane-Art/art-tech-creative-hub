@@ -98,12 +98,12 @@ function Quote() {
             <label className="text-sm font-semibold">
               Full Name *
               <input name="name" maxLength={100} className={field} placeholder="Your name" />
-              {errors.name && <span className="mt-1 block text-xs font-normal text-destructive">{errors.name}</span>}
+              {errors['name'] && <span className="mt-1 block text-xs font-normal text-destructive">{errors['name']}</span>}
             </label>
             <label className="text-sm font-semibold">
               Phone / WhatsApp *
               <input name="phone" maxLength={20} className={field} placeholder="060 691 9771" />
-              {errors.phone && <span className="mt-1 block text-xs font-normal text-destructive">{errors.phone}</span>}
+              {errors['phone'] && <span className="mt-1 block text-xs font-normal text-destructive">{errors['phone']}</span>}
             </label>
           </div>
 
@@ -111,7 +111,7 @@ function Quote() {
             <label className="text-sm font-semibold">
               Email
               <input name="email" type="email" maxLength={255} className={field} placeholder="you@email.com" />
-              {errors.email && <span className="mt-1 block text-xs font-normal text-destructive">{errors.email}</span>}
+              {errors['email'] && <span className="mt-1 block text-xs font-normal text-destructive">{errors['email']}</span>}
             </label>
             <label className="text-sm font-semibold">
               Quantity
@@ -127,7 +127,7 @@ function Quote() {
                 <option key={s} value={s}>{s}</option>
               ))}
             </select>
-            {errors.service && <span className="mt-1 block text-xs font-normal text-destructive">{errors.service}</span>}
+            {errors['service'] && <span className="mt-1 block text-xs font-normal text-destructive">{errors['service']}</span>}
           </label>
 
           <label className="text-sm font-semibold">
@@ -139,8 +139,8 @@ function Quote() {
               className={field}
               placeholder="Tell us about your design, colours, sizes, deadline..."
             />
-            {errors.description && (
-              <span className="mt-1 block text-xs font-normal text-destructive">{errors.description}</span>
+            {errors['description'] && (
+              <span className="mt-1 block text-xs font-normal text-destructive">{errors['description']}</span>
             )}
           </label>
 

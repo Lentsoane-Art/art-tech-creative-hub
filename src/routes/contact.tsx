@@ -120,17 +120,17 @@ function Contact() {
             <label className="text-sm font-semibold">
               Name *
               <input name="name" maxLength={100} className={field} placeholder="Your name" />
-              {errors.name && <span className="mt-1 block text-xs font-normal text-destructive">{errors.name}</span>}
+              {errors['name'] && <span className="mt-1 block text-xs font-normal text-destructive">{errors['name']}</span>}
             </label>
             <label className="text-sm font-semibold">
               Email *
               <input name="email" type="email" maxLength={255} className={field} placeholder="you@email.com" />
-              {errors.email && <span className="mt-1 block text-xs font-normal text-destructive">{errors.email}</span>}
+              {errors['email'] && <span className="mt-1 block text-xs font-normal text-destructive">{errors['email']}</span>}
             </label>
             <label className="text-sm font-semibold">
               Message *
               <textarea name="message" rows={6} maxLength={1000} className={field} placeholder="How can we help?" />
-              {errors.message && <span className="mt-1 block text-xs font-normal text-destructive">{errors.message}</span>}
+              {errors['message'] && <span className="mt-1 block text-xs font-normal text-destructive">{errors['message']}</span>}
             </label>
             <button
               type="submit"
